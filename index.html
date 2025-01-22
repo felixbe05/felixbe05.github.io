@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)http://localhost:63342/startpage/index.html?_ijt=iiodc22vk96l7ma6k19a6kp9m3&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Zeichenkodierung und Ansicht für mobile Geräte -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigator</title>
+
+  <!-- Einbinden einer Google-Font für konsistente Schriftart -->
+  <link href="./css2" rel="stylesheet">
+
+  <style>
+    /* Grundlayout für den gesamten Body */
+    body {
+      font-family: 'Open Sans', sans-serif; /* Schriftart */
+      background-color: #e0f2f7; /* Hintergrundfarbe */
+      margin: 0; /* Kein Außenabstand */
+      padding: 0; /* Kein Innenabstand */
+      display: flex; /* Flexbox-Layout */
+      flex-direction: column; /* Elemente vertikal anordnen */
+      align-items: center; /* Inhalte horizontal zentrieren */
+    }
+
+    /* Styling für die Hauptüberschrift */
+    h1 {
+      font-size: 4rem; /* Große Schriftgröße */
+      margin: 20px 0; /* Außenabstand oben und unten */
+      color: #2196f3; /* Blaue Farbe */
+      text-align: center; /* Zentrierter Text */
+    }
+
+    /* Container für die Kacheln */
+    .grid-container {
+      display: grid; /* Rasterlayout für die Kacheln */
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Dynamische Spaltenanzahl */
+      gap: 20px; /* Abstand zwischen den Kacheln */
+      padding: 20px; /* Innenabstand um den Container */
+      width: 100%; /* Volle Breite */
+      max-width: 1200px; /* Maximale Breite des Containers */
+      box-sizing: border-box; /* Padding wird in der Breite berücksichtigt */
+    }
+
+    /* Styling für jede Kachel */
+    .grid-item {
+      background-color: #ffffff; /* Weiße Hintergrundfarbe */
+      border: 1px solid #dddddd; /* Leichter grauer Rand */
+      border-radius: 15px; /* Abgerundete Ecken */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Schatteneffekt */
+      text-align: center; /* Zentrierter Text */
+      padding: 20px; /* Innenabstand */
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s; /* Animation für Hover-Effekte */
+    }
+
+    /* Hover-Effekt für Kacheln */
+    .grid-item:hover {
+      transform: translateY(-8px); /* Leichtes Anheben der Kachel */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tieferer Schatten */
+      background-color: #2196f3; /* Blaue Hintergrundfarbe */
+      color: white; /* Weiße Schriftfarbe */
+    }
+
+    /* Styling für Bilder in den Kacheln */
+    .grid-item img {
+      width: 100%; /* Bild passt sich der Breite der Kachel an */
+      max-width: 100px; /* Maximale Breite des Bildes */
+      height: auto; /* Verhältnis beibehalten */
+      margin-bottom: 10px; /* Abstand unterhalb des Bildes */
+    }
+
+    /* Styling für Links in den Kacheln */
+    .grid-item a {
+      text-decoration: none; /* Kein Unterstrich */
+      color: inherit; /* Farbe von der Kachel übernehmen */
+      font-weight: bold; /* Fetter Text */
+      display: block; /* Block-Level für besseren Abstand */
+      font-size: 1.2rem; /* Schriftgröße */
+    }
+
+    /* Anpassungen für Tablets und kleinere Geräte */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 3rem; /* Kleinere Schriftgröße für die Überschrift */
+      }
+
+      .grid-container {
+        gap: 20px; /* Abstand zwischen Kacheln bleibt */
+        padding: 20px; /* Innenabstand bleibt */
+      }
+
+      .grid-item {
+        padding: 20px; /* Kachel-Innenabstand bleibt */
+      }
+
+      .grid-item img {
+        max-width: 90px; /* Kleinere maximale Bildgröße */
+      }
+
+      .grid-item a {
+        font-size: 1.4rem; /* Größere Schrift für bessere Lesbarkeit */
+      }
+    }
+
+    /* Anpassungen für Smartphones */
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem; /* Noch kleinere Schriftgröße für die Überschrift */
+      }
+
+      .grid-container {
+        gap: 15px; /* Weniger Abstand zwischen Kacheln */
+        padding: 15px; /* Weniger Innenabstand */
+      }
+
+      .grid-item {
+        padding: 20px; /* Innenabstand bleibt */
+      }
+
+      .grid-item img {
+        max-width: 80px; /* Kleinste maximale Bildgröße */
+      }
+
+      .grid-item a {
+        font-size: 1.3rem; /* Angepasste Schriftgröße */
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Navigator</h1>
+
+<!-- Container für die Kacheln -->
+<div class="grid-container">
+  <!-- Kachel 1 -->
+  <div class="grid-item">
+    <a href="https://fbhomenet.ddns.net:42106/" target="_blank">
+      <img src="./img/Fritz_Logo.svg.png" alt="Link zu meiner Fritz!Box">
+      <div>Fritz!Box</div>
+    </a>
+  </div>
+
+  <!-- Kachel 2 -->
+  <div class="grid-item">
+    <a href="http://fbhomenet.ddns.net:8123/lovelace/0" target="_blank">
+      <img src="./img/New_Home_Assistant_logo.svg.png" alt="Link zu meinem Home Assistant">
+      <div>Home Assistant</div>
+    </a>
+  </div>
+
+  <!-- Kachel 3 -->
+  <div class="grid-item">
+    <a href="https://ug.link/wolke" target="_blank">
+      <img src="./img/ugnas.png" alt="Link zu meinem NAS">
+      <div>NAS</div>
+    </a>
+  </div>
+
+  <!-- Kachel 4 -->
+  <div class="grid-item">
+    <a href="http://fbhomenet.ddns.net:32400/" target="_blank">
+      <img src="./img/plex.png" alt="Link zu meinem Plex Media Server">
+      <div>Plex</div>
+    </a>
+  </div>
+
+  <!-- Kachel 5 -->
+  <div class="grid-item">
+    <a href="http://fbhomenet.ddns.net:8083/" target="_blank">
+      <img src="./img/rtsp.png" alt="Link zu meinem RTSPtoWEB Stream">
+      <div>RTSPtoWEB</div>
+    </a>
+  </div>
+</div>
+
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
